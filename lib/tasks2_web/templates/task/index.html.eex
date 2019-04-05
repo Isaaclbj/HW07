@@ -95,6 +95,6 @@
 <%= if @user_id != -1 do %>
   <span><%= link "Assign Task", to: Routes.task_path(@conn, :new),  class: "btn btn-primary" %></span>
 <% else %>
-  <strong>Please Log in to Create Task</strong>
+  <strong>You must login before you can create any task</strong>
 <% end %>
 

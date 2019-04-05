@@ -1,23 +1,21 @@
 defmodule Mix.Releases.Environment do
   @moduledoc """
-  Represents a unique configuration for releases built
-  in this environment.
+  Represents a unique configuration for releases built in this environment.
   """
   alias Mix.Releases.Profile
 
   defstruct name: :default,
-            profile: %Profile{}
+            profile: nil
 
   @type t :: %__MODULE__{
-    name: atom(),
-    profile: Profile.t
-  }
+          name: atom(),
+          profile: Profile.t()
+        }
 
   @doc """
   Creates a new Environment with the given name
   """
-  @spec new(atom()) :: __MODULE__.t
-  def new(name) do
-    %__MODULE__{name: name}
-  end
+  @spec new(atom()) :: t()
+  def new(name) when is_atom(name),
+    do: %__MODULE__{name: name, profile: %Profile{}}
 end

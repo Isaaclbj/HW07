@@ -70,6 +70,6 @@ config :phoenix, :plug_init_mode, :runtime
 config :tasks2, Tasks2.Repo,
   username: "tasks",
   password: "sub2pews",
-  database: "tasks2_dev",
+  database: "tasks2111_dev",
   hostname: "localhost",
   pool_size: 10

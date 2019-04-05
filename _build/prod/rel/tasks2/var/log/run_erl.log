@@ -1,0 +1,8 @@
+run_erl [18029] Fri Apr  5 16:10:54 2019
+Args before exec of shell:
+run_erl [18029] Fri Apr  5 16:10:54 2019
+argv[0] = sh
+run_erl [18029] Fri Apr  5 16:10:54 2019
+argv[1] = -c
+run_erl [18029] Fri Apr  5 16:10:54 2019
+argv[2] = exec "/home/hw07/hw/_build/prod/rel/tasks2/bin/tasks2" "console" --  

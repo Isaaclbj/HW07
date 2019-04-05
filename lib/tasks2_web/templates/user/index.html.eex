@@ -1,3 +1,4 @@
+  
 <h1>Listing Users</h1>
 
 <table class="table table-striped">
@@ -17,7 +18,7 @@
 
       <td>
         <%= link "Show", to: Routes.user_path(@conn, :show, user), class: "btn btn-secondary"%>
-        <%= if @user_id != -1 && @user_id == user.id do %>
+        <%= if @user_id != -1 && (@user_id == user.id || (Tasks2.Users.get_user!(@user_id).admin && !user.admin)) do %>
         <%= link "Edit", to: Routes.user_path(@conn, :edit, user), class: "btn btn-info" %>
         <%= link "Delete", to: Routes.user_path(@conn, :delete, user), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger" %>
         <% end %>
@@ -30,4 +31,4 @@
 
 <%= if @user_id == -1 do %>
 <span><%= link "New User", to: Routes.user_path(@conn, :new),  class: "btn btn-primary" %></span>
-<% end %>
+<% end %>>

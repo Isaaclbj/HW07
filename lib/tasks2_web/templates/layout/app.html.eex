@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Tasks2 · Phoenix Framework</title>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+<style>
+	body{
+		background: linear-gradient(to left,#e66465, #9198e5);
+	}
+</style>
   </head>
   <body>
     <div class="container">

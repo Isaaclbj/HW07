@@ -2,7 +2,12 @@
 
 [![Master](https://travis-ci.org/bitwalker/distillery.svg?branch=master)](https://travis-ci.org/bitwalker/distillery)
 [![Hex.pm Version](http://img.shields.io/hexpm/v/distillery.svg?style=flat)](https://hex.pm/packages/distillery)
-[![Coverage Status](https://coveralls.io/repos/github/bitwalker/distillery/badge.svg?branch=master)](https://coveralls.io/github/bitwalker/distillery?branch=master)
+
+  * [Documentation](https://hexdocs.pm/distillery)
+  * [CHANGELOG](https://hexdocs.pm/distillery/changelog.html)
+  * [Upgrading to 2.x](https://hexdocs.pm/distillery/upgrading_to_2_0.html)
+
+## About
 
 Every alchemist requires good tools, and one of the greatest tools in the alchemist's disposal
 is the distillery. The purpose of the distillery is to take something and break it down to its
@@ -16,17 +21,18 @@ It is currently a standalone package, but may be integrated into Mix at some poi
 
 ## Installation
 
-Distillery requires Elixir 1.3 or greater. It works with Erlang 18+.
+Distillery requires Elixir 1.6 or greater. It works with Erlang 20+.
 
 ```elixir
 defp deps do
-  [{:distillery, "~> 1.5", runtime: false}]
+  [{:distillery, "~> 2.0"}]
 end
 ```
 
-Just add as a mix dependency and use `mix release`. This is a replacement for exrm, but is in beta at this time.
+Just add as a mix dependency and use `mix release`.
 
-If you are new to releases, please review the [documentation](https://hexdocs.pm/distillery).
+If you are new to releases or Distillery, please review the [documentation](https://hexdocs.pm/distillery),
+it is extensive and covers just about any question you may have!
 
 ## Community/Questions/etc.
 
@@ -43,4 +49,4 @@ best to get to it in a timely fashion!
 
 ## License
 
-MIT. See the `LICENSE.md` in this repository for more details.
+MIT. See the [`LICENSE.md`](https://github.com/bitwalker/distillery/blob/master/LICENSE.md) in this repository for more details.
